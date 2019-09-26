@@ -1,0 +1,60 @@
+> year=c(2001:2007)
+> year
+[1] 2001 2002 2003 2004 2005 2006 2007
+> production
+Error: object 'production' not found
+> production
+Error: object 'production' not found
+> barplot(production,year)
+Error in barplot(production, year) : object 'production' not found
+> production=c(2500,2934,3504,2855,3200,3942,3650)
+> production
+[1] 2500 2934 3504 2855 3200 3942 3650
+> barplot(production,year)
+> barplot
+function (height, ...) 
+UseMethod("barplot")
+<bytecode: 0x000000001010c730>
+<environment: namespace:graphics>
+> barplot(production,xlab="Year",ylab="Production",main="yearly production")
+> barplot(p,xlab="Year",ylab="Production",main="yearly production")
+Error in barplot(p, xlab = "Year", ylab = "Production", main = "yearly production") : 
+  object 'p' not found
+> production=c(2500,2934,3504,2855,3200,3942,3650)
+> 
+> barplot(production,year)
+> barplot(production,xlab="Year",ylab="Production",main="yearly production")
+> barplot(production,xlab="Year",ylab="Production",main="yearly production",names.arg=year,col="blue",border="yellow")
+> barplot(production,xlab="Year",ylab="Production",main="yearly production",names.arg=year,col="blue",border="yellow",legend="year production")
+> barplot(production,xlab="Year",ylab="Production",main="yearly production",names.arg=year,col="red",border="yellow",legend="year production")
+> barplot(production,xlab="Year",ylab="Production",main="yearly production",names.arg=year,col="red",border="yellow",legend="YEAR PRODUCTION")
+> barplot(production,xlab="Year",ylab="Production",main="YEARLY PRODUCTION",names.arg=year,col="red",border="yellow",legend="YEAR PRODUCTION")
+> statename=c("Punjab","Haryana,"U.P","Gujarat","Bihar","Karnataka')
+Error: unexpected symbol in "statename=c("Punjab","Haryana,"U.P"
+> statename=c("Punjab","Haryana","U.P","Gujarat","Bihar","Karnataka')
++ statename
++ yield=c(728,943,1469,2903,2153,2276)
++ yield
++ yield=c(728,943,1469,2903,2153,2276)
++ 
+Error: unexpected end of input
+> yield=c(728,943,1469,2903,2153,2276)
+
+
+> > > 
+> state=c(1,1,1,1,1,1)
+> barplot(yeild,state)
+Error in barplot(yeild, state) : object 'yeild' not found
+> barplot(yield,state)
+> barplot(yield,state,xlab="State",ylab="Yield",names.arg=statename,main="Yeild of rice",col="blue",border=yellow",legend="Yeild of rice per kg per acre")
+Error: unexpected string constant in "barplot(yield,state,xlab="State",ylab="Yield",names.arg=statename,main="Yeild of rice",col="blue",border=yellow",legend=""
+> barplot(yield,state,xlab="State",ylab="Yield",names.arg=statename,main="Yeild of rice",col="blue",border="yellow",legend="Yeild of rice per kg per acre")
+Error in barplot.default(yield, state, xlab = "State", ylab = "Yield",  : 
+  object 'statename' not found
+> statename
+Error: object 'statename' not found
+> statename=c("Punjab","Haryana","U.P","Gujarat","Bihar","Karnataka")
+> statename
+[1] "Punjab"    "Haryana"   "U.P"       "Gujarat"   "Bihar"     "Karnataka"
+> barplot(yield,state,xlab="State",ylab="Yield",names.arg=statename,main="Yeild of rice",col="blue",border="yellow",legend="Yeild of rice per kg per acre")
+> 
